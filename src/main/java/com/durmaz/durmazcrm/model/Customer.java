@@ -32,7 +32,6 @@ public class Customer extends BaseEntity {
     // Default constructor
     public Customer() {}
 
-    // Constructor with parameters
     public Customer(String name, String lastName, LocalDateTime birthday, Boolean gender, String tckn) {
         this.name = name;
         this.lastName = lastName;

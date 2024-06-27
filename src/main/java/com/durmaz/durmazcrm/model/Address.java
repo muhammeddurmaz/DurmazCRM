@@ -27,7 +27,6 @@ public class Address extends BaseEntity {
     // Default constructor
     public Address() {}
 
-    // Constructor with parameters
     public Address(String country, String city, String district, String locality, String address) {
         this.country = country;
         this.city = city;

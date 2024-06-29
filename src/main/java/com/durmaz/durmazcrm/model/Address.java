@@ -8,7 +8,7 @@ public class Address extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id", nullable = false)
-    private String id;
+    private Long id;
     @Column(name = "country", length = 100)
     private String country;
 
@@ -35,11 +35,11 @@ public class Address extends BaseEntity {
         this.address = address;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

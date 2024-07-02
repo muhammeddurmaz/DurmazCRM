@@ -8,7 +8,7 @@ public class ContactInformation extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private String id;
+    private Long id;
     @Column(name = "email", length = 255)
     private String email;
 
@@ -26,11 +26,11 @@ public class ContactInformation extends BaseEntity {
         this.landlineNumber = landlineNumber;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
